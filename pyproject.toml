@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "picosvgx"
+version = "0.1.0"
+description = "An extended fork of Google's picosvg with better real-world SVG compatibility"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+requires-python = ">=3.8"
+authors = [
+    {name = "Ximing Xing", email = "ximingxing@gmail.com"},
+]
+keywords = ["svg", "simplify", "font", "icon", "vector"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Graphics",
+]
+dependencies = [
+    "absl-py>=0.9.0",
+    "lxml>=4.0",
+    "skia-pathops>=0.6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-clarity",
+]
+
+[project.scripts]
+picosvgx = "picosvgx.picosvgx:main"
+
+[project.urls]
+Homepage = "https://github.com/ximinng/picosvgx"
+Repository = "https://github.com/ximinng/picosvgx"
+
+[tool.setuptools.packages.find]
+where = ["src"]

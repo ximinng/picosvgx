@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs></defs>
+  <switch>
+    <g systemLanguage="en">
+      <text x="10" y="50" font-size="12">Hello</text>
+    </g>
+    <g systemLanguage="zh">
+      <text x="10" y="50" font-size="12">你好</text>
+    </g>
+    <g>
+      <text x="10" y="50" font-size="12">Hi</text>
+    </g>
+  </switch>
+  <rect x="10" y="60" width="80" height="20" fill="#3498db"/>
+</svg>
